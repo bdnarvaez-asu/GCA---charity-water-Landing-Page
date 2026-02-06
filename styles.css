@@ -14,9 +14,9 @@ body {
 }
 
 .text-block {
-  flex: 1 1 50%;
+  flex: 1 1 55%;
   padding: 4rem 3rem;
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .text-block h1 {
@@ -52,15 +52,24 @@ body {
 }
 
 .image-block {
-  flex: 1 1 50%;
+  flex: 0 0 45%;
   min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
 }
 
 .image-block img {
   width: 100%;
-  height: 100vh;
+  max-width: 720px;
+  height: auto;
   object-fit: cover;
   display: block;
+  transform: scale(0.96);
+  transition: transform 180ms ease;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.45);
 }
 
 .home-button {
@@ -72,7 +81,15 @@ body {
 }
 
 .home-button img {
-  width: 56px;
+  width: 88px;
   height: auto;
   display: block;
+}
+
+@media (max-width: 880px) {
+  .hero { flex-direction: column; }
+  .text-block { flex: 1 1 100%; max-width: 100%; padding: 2rem; }
+  .image-block { flex: 1 1 100%; padding: 0 1rem; }
+  .image-block img { width: 100%; max-width: 100%; transform: none; height: auto; }
+  .home-button img { width: 64px; }
 }
