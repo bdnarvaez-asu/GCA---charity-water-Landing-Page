@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
-  background: #000;
+  background: #1a1a1a;
 }
 
 .hero {
@@ -10,51 +10,69 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   min-height: 100vh;
+  position: relative;
 }
 
 .text-block {
-  flex: 1;
-  padding: 3rem;
-  background: #000;
+  flex: 1 1 50%;
+  padding: 4rem 3rem;
+  max-width: 700px;
 }
 
 .text-block h1 {
-  font-size: 2.5rem;
+  font-size: 3.25rem;
+  line-height: 1.05;
   margin-bottom: 1rem;
 }
 
 .cta-box {
-  background: #1e90ff;
+  background: #003366;
   padding: 1.5rem;
   margin: 2rem 0;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #fff;
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1.25rem;
-  background: #ffd700;
-  color: #000;
+  padding: 0.75rem 1.5rem;
+  background: #FFC907;
+  color: #1a1a1a;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 .footer-note {
   margin-top: 2rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-family: Georgia, serif;
 }
 
 .image-block {
-  flex: 1;
+  flex: 1 1 50%;
   min-height: 100%;
 }
 
 .image-block img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
+  display: block;
+}
+
+.home-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  display: inline-block;
+}
+
+.home-button img {
+  width: 56px;
+  height: auto;
+  display: block;
 }
