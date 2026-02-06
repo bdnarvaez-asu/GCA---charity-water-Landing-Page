@@ -3,20 +3,27 @@ body {
   font-family: 'Proxima Nova', 'Georgia', 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
   background: #1a1a1a;
+  box-sizing: border-box;
+}
+
+body *, body *::before, body *::after {
+  box-sizing: border-box;
 }
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: stretch;
   min-height: 100vh;
   position: relative;
 }
 
 .text-block {
-  flex: 1 1 55%;
+  flex: 1 1 auto;
   padding: 4rem 3rem;
-  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-block h1 {
@@ -52,12 +59,13 @@ body {
 }
 
 .image-block {
-  flex: 0 0 45%;
+  flex: 0 0 auto;
+  width: 50%;
   min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
 .image-block img {
@@ -86,10 +94,10 @@ body {
   display: block;
 }
 
-@media (max-width: 880px) {
-  .hero { flex-direction: column; }
-  .text-block { flex: 1 1 100%; max-width: 100%; padding: 2rem; }
-  .image-block { flex: 1 1 100%; padding: 0 1rem; }
+@media (max-width: 968px) {
+  .hero { flex-wrap: wrap; }
+  .text-block { flex: 1 1 100%; padding: 2rem; }
+  .image-block { width: 100%; padding: 1.5rem; }
   .image-block img { width: 100%; max-width: 100%; transform: none; height: auto; }
   .home-button img { width: 64px; }
 }
