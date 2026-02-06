@@ -89,7 +89,7 @@ body *, body *::before, body *::after {
 }
 
 .home-button img {
-  width: 88px;
+  width: 128px;
   height: auto;
   display: block;
 }
@@ -99,5 +99,5 @@ body *, body *::before, body *::after {
   .text-block { flex: 1 1 100%; padding: 2rem; }
   .image-block { width: 100%; padding: 1.5rem; }
   .image-block img { width: 100%; max-width: 100%; transform: none; height: auto; }
-  .home-button img { width: 64px; }
+  .home-button img { width: 96px; }
 }
