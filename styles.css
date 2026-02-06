@@ -89,7 +89,7 @@ body *, body *::before, body *::after {
 }
 
 .home-button img {
-  width: 128px;
+  width: 250px;
   height: auto;
   display: block;
 }
